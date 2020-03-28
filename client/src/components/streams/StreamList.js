@@ -28,9 +28,7 @@ class StreamList extends React.Component {
 
   renderList() {
     return this.props.streams.map(stream => {
-      if (!stream.title) {
-        return;
-      }
+      
       return (
         <div className="item" key={stream.id}>
           {this.renderAdmin(stream)}
