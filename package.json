@@ -12,7 +12,8 @@
     "server": "cd api && npm install && node server.js",
     "client": "cd client && npm install && npm start --prefix",
     "rtmp": "cd rtmpserver && npm install && node index.js",
-    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run rtmp\""
+    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run rtmp\"",
+    "heroku-postbuild": "npm install --prefix client && npm run build --prefix client"
   },
   "author": "",
   "license": "MIT",
